@@ -36,7 +36,7 @@ module.exports = ctx => {
     const len = args.length;
 
     // Find image URL
-    bool found = false;
+    let found = false;
     for (let i = 0; i < len; i++) {
       const asset = PostAsset.findOne({post: this._id, slug: args[i]});
       if (asset) {
