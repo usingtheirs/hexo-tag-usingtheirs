@@ -1,0 +1,25 @@
+{
+  "name": "hexo-tag-usingtheirs",
+  "version": "0.1.0",
+  "author": {
+    "name": "Hyun Chang Lee",
+    "email": "musclyhc@gmail.com",
+    "url": "http://usingtheirs.com/"
+  },
+  "tags": [
+    "tag_plugins",
+    "bootstrap",
+    "hexo"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/usingtheirs/hexo-tag-usingtheirs.git"
+  },
+  "bugs": {
+    "url": "http://github.com/usingtheirs/hexo-tag-usingtheirs/issues"
+  },
+  "dependencies": {},
+  "readmeFilename": "README.md",
+  "description": "hexo-tag-usingtheirs",
+  "homepage": "https://github.com/usingtheirs/hexo-tag-bootstrap"  
+}
