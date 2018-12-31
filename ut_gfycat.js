@@ -6,7 +6,7 @@ const rNameAndCaption = /["']?([^"']+)?["']?\s*["']?([^"']+)?["']?/;
 * Gfycat Tag
 *
 * Syntax:
-*   {% ut_gfycat [width] [height] [video name] %}
+*   {% ut_gfycat [width] [height] [video name[caption]] %}
 */
 module.exports = ctx => {
   return function ut_gfycatTag(args, content) {
@@ -33,6 +33,6 @@ module.exports = ctx => {
       }
     }
     
-    return '<figure><div class="ut_gfycat" style="width:' + width + 'px; height:' + height + ';"><iframe src="https://gfycat.com/ifr/' + name + '"/></div><figcation>' + caption + '</figcaption></figure>';
+    return '<figure><div class="ut_gfycat" style="width: ' + width + 'px; height: ' + height + 'px;"><iframe src="https://gfycat.com/ifr/' + name + '"/></div><figcation>' + caption + '</figcaption></figure>';
   }
 };
