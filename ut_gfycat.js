@@ -1,18 +1,16 @@
 'use strict';
 
-const rNameAndCaption = /["']?([^"']+)?["']?\s*["']?([^"']+)?["']?/;
-
 /**
 * Gfycat Tag
 *
 * Syntax:
-*   {% ut_gfycat [width] [height] [video name[caption]] %}
+*   {% ut_gfycat [width] [height] [video name] %}
 */
 module.exports = ctx => {
   return function ut_gfycatTag(args, content) {
     const len = args.length;
 
-    let width, height, name, caption;
+    let width, height, name;
 
     // Find image width and height
     if (args && args.length) {
@@ -23,16 +21,10 @@ module.exports = ctx => {
           height = args.shift();
         }
       }
-
-      const match = rNameAndCaption.exec(args.join(' '));
-
-      // Find video name
-      if (match != null) {
-        name = match[1];
-        caption = match[2];
-      }
+      
+      name = args.join(' ');
     }
     
-    return '<figure><div class="ut_gfycat" style="width: ' + width + 'px; height: ' + height + 'px;"><iframe src="https://gfycat.com/ifr/' + name + '"/></div><figcaption>' + caption + '</figcaption></figure>';
+    return `<div class="ut_gfycat" style="width: ${width}px; height: ${height}px;"><iframe src="https://gfycat.com/ifr/${name}"/></div>`;
   }
 };
