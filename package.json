@@ -18,7 +18,9 @@
   "bugs": {
     "url": "http://github.com/usingtheirs/hexo-tag-usingtheirs/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+     "hexo-util": "^0.6.3"
+  },
   "readmeFilename": "README.md",
   "description": "hexo-tag-usingtheirs",
   "homepage": "https://github.com/usingtheirs/hexo-tag-bootstrap"  
