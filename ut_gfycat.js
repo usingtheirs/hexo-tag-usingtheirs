@@ -34,4 +34,5 @@ module.exports = ctx => {
     }
     
     return '<figure><div class="ut_gfycat" style="width:' + width + 'px; height:' + height + ';"><iframe src="https://gfycat.com/ifr/' + name + '"/></div><figcation>' + caption + '</figcaption></figure>';
+  }
 };
