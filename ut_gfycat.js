@@ -33,6 +33,6 @@ module.exports = ctx => {
       }
     }
     
-    return '<figure><div class="ut_gfycat" style="width: ' + width + 'px; height: ' + height + 'px;"><iframe src="https://gfycat.com/ifr/' + name + '"/></div><figcation>' + caption + '</figcaption></figure>';
+    return '<figure><div class="ut_gfycat" style="width: ' + width + 'px; height: ' + height + 'px;"><iframe src="https://gfycat.com/ifr/' + name + '"/></div><figcaption>' + caption + '</figcaption></figure>';
   }
 };
