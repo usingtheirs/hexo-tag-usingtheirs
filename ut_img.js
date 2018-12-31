@@ -86,7 +86,7 @@ module.exports = ctx => {
           alt = title;
       }
     }
-
+    
     const attrs = {
       src,
       class: classes.join(' '),
@@ -96,6 +96,7 @@ module.exports = ctx => {
       alt
     };
 
-    return htmlTag('img', attrs);
+    let img = htmlTag('img', attrs);
+    return `<figure>${img}<figcaption>${alt}</figcaption></figure>`;
   };
 };
