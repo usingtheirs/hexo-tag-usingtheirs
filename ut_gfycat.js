@@ -1,6 +1,6 @@
 'use strict';
 
-const rNameAndCaption = /["']?([^"']+)?["']?\s*/["']?([^"']+)?["']?;
+const rNameAndCaption = /["']?([^"']+)?["']?\s*["']?([^"']+)?["']?/;
 
 /**
 * Gfycat Tag
