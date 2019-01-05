@@ -11,3 +11,6 @@ Collapsible aside. You need css and javascript snippets to support this.
 
 ## ut_gfycat
 Gfycat video support.
+
+## ut_comment
+You can use this tag for texts that you don't want to render.
