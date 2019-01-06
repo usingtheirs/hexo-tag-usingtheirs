@@ -4,15 +4,18 @@
 * Figure Tag
 *
 * Syntax:
-*   {% ut_figure [caption] %}
+*   {% ut_figure_open %}
+*   {% ut_figure_close [caption] %}
 */
-module.exports = ctx => {
-  return function ut_figureTag(args, content) {
-    const len = args.length;
+module.exports.open = ctx => {
+  return function ut_figureOpenTag(args, content) {
+    return '<figure>'
+  }
+};
 
+module.exports.close = ctx => {
+  return function ut_figureCloseTag(args, content) {
     const caption = args.join(' ');
-    content = ctx.render.renderSync({text: content, engine: 'markdown'});
-
-    return `<figure>${content}<figcaption>${caption}</figcaption></figure>`;
+    return `<figcaption>${caption}</figcaption></figure>`;
   }
 };
